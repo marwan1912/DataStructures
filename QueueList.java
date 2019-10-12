@@ -30,9 +30,8 @@ public class Queue {
 	}
 	
 	public void print() {
-			for(int i = 0; i < queue.size(); i++) {
-			System.out.println(queue.get(0));
-			queue.remove(0);
+	for(int i = 0; i < queue.size(); i++) {
+			System.out.println(dequeue());
 		}
 		
 	}
