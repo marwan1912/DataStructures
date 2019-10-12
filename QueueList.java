@@ -30,6 +30,7 @@ public class Queue {
 	}
 	
 	public void print() {
+	int c = queue.size();
 	for(int i = 0; i < queue.size(); i++) {
 			System.out.println(dequeue());
 		}
