@@ -41,7 +41,10 @@ public class Queue {
 	}
 	
 	public void print() {
-		queue.toString();
+		for (int i = 0; i < elementsInside; i++){
+			System.out.println(dequeue());
+		}
+		
 	}
 	
 	public static void main(String[] args) {
