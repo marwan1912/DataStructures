@@ -30,7 +30,11 @@ public class Queue {
 	}
 	
 	public void print() {
-		queue.print();
+			for(int i = 0; i < queue.size(); i++) {
+			System.out.println(queue.get(0));
+			queue.remove(0);
+		}
+		
 	}
 	
 	public static void main(String[] args) {
