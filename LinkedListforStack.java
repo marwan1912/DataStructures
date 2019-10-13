@@ -1,15 +1,15 @@
 
-public class LinkedList {
+public class LinkedListforStack {
 	
 	Node head;
 	int count;
 	
-	public LinkedList() {
+	public LinkedListforStack() {
 		head = null;
 		count = 0;
 	}
 	
-	public LinkedList(Node head) {	
+	public LinkedListforStack(Node head) {	
 		this.head = head;
 		count = 1;
 	}
