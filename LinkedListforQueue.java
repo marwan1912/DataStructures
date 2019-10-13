@@ -1,15 +1,15 @@
 
-public class LinkedList {
+public class LinkedListforQueue {
 	
 	Node head;
 	int count;
 	
-	public LinkedList() {
+	public LinkedListforQueue() {
 		head = null;
 		count = 0;
 	}
 	
-	public LinkedList(Node head) {	
+	public LinkedListforQueue(Node head) {	
 		this.head = head;
 		count = 1;
 	}
