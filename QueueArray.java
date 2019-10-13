@@ -46,7 +46,8 @@ public class Queue {
 	}
 	
 	public void print() {
-		for (int i = 0; i < elementsInside; i++){
+		int c = elementsInside;
+		for (int i = 0; i < c; i++){
 			System.out.println(dequeue());
 		}
 		
