@@ -16,16 +16,12 @@ public class LinkedList {
 	
 	//Adds a node with data in it.
 	public void add(int data) {		
-		Node temp = new Node(data);
+		Node newHead = new Node(data);
 		if(head == null) {
-			head = temp;
+			head = newHead;
 		}else {
-			Node current = head;
-			while(current.getNext() != null) {
-				current = current.getNext();
-			}
-			
-			current.setNext(temp);
+			newHead.setNext(head);
+			head = newHead;
 		}
 		
 		count++;		
@@ -88,13 +84,11 @@ public class LinkedList {
 	public void remove(int index) {
 		
 		if(index < 0 || index >= size()) {
-			System.out.println("Index can not be less than 0 or more than the linked list size");
 			return;
 		}
 		
 		if(index == 0) {
 			head = head.getNext();
-			System.out.println("Node has been removed successfully");
 			count--;
 			return;
 		}
@@ -107,14 +101,13 @@ public class LinkedList {
 		}
 			
 			prev.setNext(temp.getNext());
-			System.out.println("Node has been removed successfully");
 			count--;
 	}
 	
 	//Prints all the elements inside the linked list.
 	public void print() {
 		if(head == null) {
-			System.out.println("The list is empty.");
+			System.out.println("The queue is empty.");
 		}else {
 			Node current = head;
 			while(current != null) {
