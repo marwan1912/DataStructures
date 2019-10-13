@@ -1,10 +1,10 @@
 
 public class Queue {
 
-	LinkedList queue;
+	LinkedListforQueue queue;
 	
 	public Queue() {
-		queue = new LinkedList();
+		queue = new LinkedListforQueue();
 	}
 	
 	public boolean isEmpty() {
