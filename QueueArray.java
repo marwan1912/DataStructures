@@ -18,6 +18,11 @@ public class Queue {
 	}
 	
 	public void enqueue(int n) {
+		if(elementsInside == size) {
+			System.out.println("You can't put more elements in the queue.");
+			return;
+		}
+		
 		queue[elementsInside] = n;
 		elementsInside++;
 	}
