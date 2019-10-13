@@ -1,10 +1,10 @@
 
 public class Stack {
 
-	LinkedList stack;
+	LinkedListforStack stack;
 	
 	public Stack() {
-		stack = new LinkedList();
+		stack = new LinkedListforStack();
 	}
 	
 	public boolean isEmpty() {
